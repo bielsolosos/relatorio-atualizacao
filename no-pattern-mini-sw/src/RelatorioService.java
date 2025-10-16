@@ -6,7 +6,7 @@ public class RelatorioService {
         sb.append("=== Relatório de Atualização de Windows ===\n");
 
         for (Notebook n : bancoDeDadosNotebook.listarTodos()) {
-            if (n.precisaAtualizar()) {
+            if (precisaAtualizar(n)) {
                 sb.append(n.getDono())
                         .append(" precisa atualizar o Windows (atual: ")
                         .append(n.getVersaoWindows())
@@ -15,5 +15,9 @@ public class RelatorioService {
         }
 
         return sb.toString();
+    }
+
+    public static boolean precisaAtualizar(Notebook notebookParaAtualizar) {
+        return notebookParaAtualizar.getVersaoWindows() < 12 ? true : false;
     }
 }

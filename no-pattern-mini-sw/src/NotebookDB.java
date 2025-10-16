@@ -10,7 +10,7 @@ public class NotebookDB {
         notebooks.add(new Notebook("Murilo", "Dell", "Latitude", 12));
         notebooks.add(new Notebook("José", "HP", "Pavilion", 11));
         notebooks.add(new Notebook("Ana", "Acer", "Aspire", 12));
-        notebooks.add(new Notebook("Paula", "Samsung", "Book", 9));
+        notebooks.add(new Notebook("Jorge", "Samsung", "Book", 7));
         return notebooks;
     }
 }

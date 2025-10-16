@@ -11,10 +11,6 @@ public class Notebook {
         this.versaoWindows = versaoWindows;
     }
 
-    public boolean precisaAtualizar() {
-        return versaoWindows < 12;
-    }
-
     public String getDono() {
         return dono;
     }
